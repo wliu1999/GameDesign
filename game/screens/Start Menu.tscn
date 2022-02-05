@@ -1,0 +1,32 @@
+[gd_scene format=2]
+
+[node name="Start Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button Container" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Start Button" type="Button" parent="Button Container"]
+margin_right = 63.0
+margin_bottom = 20.0
+text = "Start"
+
+[node name="Options Button" type="Button" parent="Button Container"]
+margin_top = 24.0
+margin_right = 63.0
+margin_bottom = 44.0
+text = "Options"
+
+[node name="Quit Game Button" type="Button" parent="Button Container"]
+margin_top = 48.0
+margin_right = 63.0
+margin_bottom = 68.0
+text = "Quit"
