@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Game Over/Label.gd" type="Script" id=1]
+
+[node name="Game_Over" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0.862745, 0, 0, 1 )
+margin_left = 1.0
+margin_top = -3.0
+margin_right = 1019.0
+margin_bottom = 594.0
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 0.92549, 0.941176, 0.980392, 1 )
+margin_left = 260.0
+margin_top = 164.0
+margin_right = 372.0
+margin_bottom = 195.0
+rect_scale = Vector2( 6.12084, 9.27346 )
+text = "Game Over!
+"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play Again" type="Button" parent="."]
+margin_left = 119.0
+margin_top = 414.0
+margin_right = 219.0
+margin_bottom = 434.0
+rect_scale = Vector2( 3.19272, 4.35969 )
+text = "Play Again"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 580.0
+margin_top = 415.0
+margin_right = 663.0
+margin_bottom = 435.0
+rect_scale = Vector2( 4.38028, 4.45498 )
+text = "Quit"
+
+[connection signal="pressed" from="Play Again" to="Label" method="_on_Play_Again_pressed"]
